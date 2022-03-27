@@ -1,0 +1,26 @@
+#include <string>
+#include <map>
+#include<iostream>
+using namespace std; 
+
+int main ( ) {
+
+  map<string, int> m; 
+  m[ "cat"]= 10; 
+  m[ "dog"]= 20; 
+  m[ "bird"]= 30; 
+
+  cout <<  m[ "cat"] <<endl;
+  cout <<  m[ "dog"] <<endl;
+  cout <<  m[ "bird"] <<endl;
+  cout <<  m[ "goat"] <<endl;
+
+  //map<string,int> ::iterator i;
+  //for ( i= m.begin(); i != m.end(); i++ )
+  //  cout << i->first << " " << i->second <<endl; 
+
+  for (auto x: m) 
+  cout << x.first << " " << x.second <<endl; 
+
+  return 0; 
+}
